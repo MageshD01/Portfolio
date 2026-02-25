@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<title>Magesh Portfolio</title>
+
+<style>
+html{scroll-behavior:smooth;}
+section{scroll-margin-top:90px;}
+.nav-link{color:white!important;border-radius:5px;}
+.nav-link:hover{background:white!important;color:green!important;}
+.light-mode{background:#f8f9fa!important;color:#000;}
+.light-mode .navbar{background:#fff!important;}
+.light-mode .card{background:#fff;color:#000;}
+.progress-bar{width:0;transition:1.5s;}
+.card{transition:0.3s;}
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.project-btns a{min-width:120px;}
+.hero-img{
+height:350px;
+width:350px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #198754;
+}
+.social-icons i{
+font-size:22px;
+margin-right:15px;
+cursor:pointer;
+transition:0.3s;
+}
+.social-icons i:hover{transform:scale(1.2);}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">Magesh D.</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li><a class="nav-link" href="#home">Home</a></li>
+<li><a class="nav-link" href="#about">About</a></li>
+<li><a class="nav-link" href="#experience">Experience</a></li>
+<li><a class="nav-link" href="#skill">Skills</a></li>
+<li><a class="nav-link" href="#project">Projects</a></li>
+<li><a class="nav-link" href="#cert">Certifications</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+
+<button onclick="toggleTheme()" class="btn btn-light ms-3">🌙</button>
+</div>
+</div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="py-5">
+<div class="container mt-5 pt-5">
+<div class="row align-items-center">
+
+<div class="col-md-6 text-center">
+<img src="images/1747647862960~2.jpg" class="hero-img">
+</div>
+
+<div class="col-md-6">
+<h1 class="text-success">Hi I am <span id="typing"></span></h1>
+<h2>Magesh D.</h2>
+
+<p class="mt-3">
+Passionate Python Django full-stack developer with strong OOP, REST API, and deployment skills.
+</p>
+
+<a class="btn btn-success">Hire Me</a>
+<a href="resume.pdf" download class="btn btn-outline-success ms-2">
+<i class="bi bi-download"></i> Resume
+</a>
+
+<div class="mt-4 social-icons">
+
+<a href="https://github.com/MageshD01" target="_blank">
+<i class="bi bi-github text-dark"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/magesh-d-" target="_blank">
+<i class="bi bi-linkedin text-primary"></i>
+</a>
+
+<a href="mailto:yourmail@gmail.com">
+<i class="bi bi-envelope-fill text-danger"></i>
+</a>
+
+<a href="https://wa.me/+91 7845087165" target="_blank">
+<i class="bi bi-whatsapp text-success"></i>
+</a>
+
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 bg-light">
+<div class="container">
+<h1 class="text-center mb-4">About Me</h1>
+
+<div class="row">
+<div class="col-md-6">
+<div class="card p-4 shadow">
+<h4>Summary</h4>
+<p>
+Highly motivated and detail-oriented Python Full Stack Developer with strong
+knowledge in object-oriented programming (OOP), Django framework,
+REST API development,jwt Authentication, API viwes and  database design.
+</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card p-4 shadow">
+<h4>Education</h4>
+<p>
+BCA graduate (2025 pass-out) from Jawahar Science College-neyveli
+with strong interest in Python Full Stack Development. 
+Skilled in building web applications using Python, Django, HTML, CSS, and Bootstrap.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5">
+<div class="container">
+<h1 class="text-center mb-4">Experience</h1>
+
+<div class="card p-4 shadow">
+<h5>Python Django Developer</h5>
+<p><strong>Freasher | 2025 - Present</strong></p>
+<ul>
+<li>Developed REST APIs using Django Rest Framework</li>
+<li>Built responsive UI using Bootstrap 5</li>
+<li>Integrated JWT authentication</li>
+<li>Deployed projects using GitHub</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skill" class="py-5 bg-light">
+<div class="container">
+<h1 class="text-center mb-5">Skills</h1>
+
+<div class="row g-4">
+
+<div class="col-md-4"><div class="card p-3"><h5>Python</h5>
+<div class="progress"><div class="progress-bar skill" data-width="95%">95%</div></div></div></div>
+
+<div class="col-md-4"><div class="card p-3"><h5>Django</h5>
+<div class="progress"><div class="progress-bar skill" data-width="90%">90%</div></div></div></div>
+
+<div class="col-md-4"><div class="card p-3"><h5>HTML CSS</h5>
+<div class="progress"><div class="progress-bar skill" data-width="90%">90%</div></div></div></div>
+
+<div class="col-md-4"><div class="card p-3"><h5>REST API</h5>
+<div class="progress"><div class="progress-bar skill" data-width="85%">85%</div></div></div></div>
+
+<div class="col-md-4"><div class="card p-3"><h5>SQL</h5>
+<div class="progress"><div class="progress-bar skill" data-width="80%">80%</div></div></div></div>
+
+<div class="col-md-4"><div class="card p-3"><h5>Git & GitHub</h5>
+<div class="progress"><div class="progress-bar skill" data-width="85%">85%</div></div></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="project" class="py-5">
+<div class="container">
+<h1 class="text-center mb-4">Projects</h1>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="card shadow">
+<img src="images/sms.png" class="card-img-top" style="height:230px;object-fit:cover;">
+<div class="card-body text-center">
+<h5>Student Management System</h5>
+<p>Django CRUD with Authentication & REST API</p>
+<a href="https://github.com/MageshD01/python_project2.git" class="btn btn-outline-success">
+<i class="bi bi-github"></i> Code
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card shadow">
+<img src="images/vms.png" class="card-img-top" style="height:230px;object-fit:cover;">
+<div class="card-body text-center">
+<h5>Vendor Management System</h5>
+<p>Django full-stack with Bootstrap UI</p>
+<a href="https://github.com/MageshD01/python_project1.git" class="btn btn-outline-success">
+<i class="bi bi-github"></i> Code
+</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="cert" class="py-5 bg-light">
+<div class="container">
+<h1 class="text-center mb-4">Certifications</h1>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="card p-3 shadow">
+<h5>Python Full Stack Development</h5>
+<p>Completed training in Django, REST APIs and Bootstrap.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card p-3 shadow">
+<h5>SQL & Database Design</h5>
+<p>Hands-on experience with MySQL and relational modeling.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+<div class="container">
+<h1 class="text-center">Contact</h1>
+
+<form class="col-md-6 mx-auto"
+action="https://formsubmit.co/mageshd389@gmail.com"
+method="POST">
+
+<input type="text" name="name" class="form-control mb-2"
+placeholder="Your Name" required>
+
+<input type="email" name="email" class="form-control mb-2"
+placeholder="Your Email" required>
+
+<textarea name="message" class="form-control mb-2"
+placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn btn-success w-100">
+Send Message
+</button>
+
+</form>
+
+</div>
+</section>
+
+<footer class="text-center bg-dark text-light py-3">
+© 2026 Magesh | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Typing Effect -->
+<script>
+const roles=["Python Developer","Django Developer","Full Stack Developer"];
+let i=0,j=0,current="",del=false;
+
+function type(){
+if(i>=roles.length)i=0;
+current=roles[i];
+
+if(!del){
+document.getElementById("typing").textContent=current.substring(0,j++);
+if(j>current.length){del=true;setTimeout(type,1200);return;}
+}
+else{
+document.getElementById("typing").textContent=current.substring(0,j--);
+if(j==0){del=false;i++;}
+}
+setTimeout(type,100);
+}
+type();
+</script>
+
+<script>
+function toggleTheme(){
+document.body.classList.toggle("light-mode");
+}
+
+window.addEventListener("scroll",function(){
+document.querySelectorAll(".skill").forEach(skill=>{
+let top=skill.getBoundingClientRect().top;
+if(top<window.innerHeight){
+skill.style.width=skill.getAttribute("data-width");
+}
+});
+});
+</script>
+
+</body>
+</html>
